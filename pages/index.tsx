@@ -10,13 +10,13 @@ const index = () => {
         range of tech stacks including....
       </h5>
       <div
-        className="flex-grow p-4 mt-5 bg-gray-400"
+        className="flex-grow p-4 mt-5 bg-gray-400 dark:bg-dark-100"
         style={{ marginRight: "-1.5rem", marginLeft: "-1.5rem" }}
       >
         <h6 className="text-xl font-bold tracking-wide my-34">What I Offer</h6>
         <div className="grid gap-6 lg:grid-cols-2">
           {services.map(service => (
-            <div className="bg-gray-200 rounded-lg lg:col-span-1">
+            <div className="col-span-2 p-2 bg-gray-200 rounded-lg md:col-span-1 dark:bg-dark-200">
               <ServiceCard service={service} />
             </div>
           ))}
