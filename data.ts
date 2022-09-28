@@ -1,14 +1,15 @@
 import { RiComputerLine, RiCloudLine } from 'react-icons/ri';
-import { IoEarth } from 'react-icons/io5'
-import { Service, Skill } from './type';
+import { FiMonitor } from 'react-icons/fi';
+import { IoEarth } from 'react-icons/io5';
+import { Project, Service, Skill } from './type';
 import { SiJavascript, SiPhp, SiJava, SiMysql, SiReact, SiHtml5, SiCss3, SiMongodb } from 'react-icons/si'
 
 
 export const services:Service[] = [
     {
         title: 'Frontend Dev',
-        about: 'Incorporating component libraries such as <b>Bootstrap</b> and <b>MaterialUI</b>, or frameworks such as <b>Tailwind</b>, I can provide eye-catching and responsive UI.',
-        Icon: RiComputerLine
+        about: 'Incorporating component libraries such as <b>Bootstrap</b> and <b>MaterialUI</b>, or frameworks such as <b>Tailwind</b>, I can provide an eye-catching and responsive UI.',
+        Icon: FiMonitor
     },
     {
         title: 'Backend Dev',
@@ -79,4 +80,47 @@ export const tools:Skill[] = [
         Icon: SiJava
     },
   
+]
+
+export const projects:Project[] = [
+    {
+        id: 1,
+        name: "Once Upon An Adventure",
+        description: "An online RPG set in a fantasy world. Complete mini-games to earn enough coins to face the final boss. Sign in and save your progress with authenticated users.",
+        image_path: "https://d3kccomi9ge1kz.cloudfront.net/onceUponAnAdventure.png",
+        deployed_url: "https://www.onceuaa.com/",
+        github_url: "https://github.com/eh4git/once-upon-an-adventure",
+        category: ["react", "mongodb"],
+        key_tech: ["React", "Redux", "MongoDB"]
+    },
+    {
+        id: 2,
+        name: "React-Ecommerce",
+        description: "Built with React this application that front-end UI for an e-commerce platform. Users can favorite items, add items to a cart, manage the items in the cart and place an order.",
+        image_path: "https://d3kccomi9ge1kz.cloudfront.net/Ecommerce.png",
+        deployed_url: "https://scrimba-ec-ommerce.vercel.app/",
+        github_url: "https://github.com/eh4git/Scrimba_ECommerce",
+        category: ["react"],
+        key_tech: ["React"]
+    },
+    {
+        id: 3,
+        name: "Time2Fly",
+        description: "A React Native application that allows flight attendants to easily track their hours and will let the user know when they will reach their maximum allowed work time.",
+        image_path: "https://d3kccomi9ge1kz.cloudfront.net/image-coming-soon.jpg",
+        deployed_url: "",
+        github_url: "",
+        category: ["react"],
+        key_tech: ["React Native"]
+    },
+    {
+        id: 4,
+        name: "Minesweeper",
+        description: "The classic game of minesweeper with a few improvements. Users always open multiple tiles on their first click and can choose four different difficulty settings.",
+        image_path: "https://d3kccomi9ge1kz.cloudfront.net/react-minesweeper.png",
+        deployed_url: "https://react-minesweeper-ten.vercel.app/",
+        github_url: "",
+        category: ["react"],
+        key_tech: ["React", "Typescript",]
+    },
 ]

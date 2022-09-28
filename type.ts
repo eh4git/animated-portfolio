@@ -11,3 +11,17 @@ export interface Skill{
     level: string,
     Icon: IconType
 }
+
+export interface Project{
+    id: number,
+    name:string,
+    description:string,
+    image_path:string,
+    deployed_url:string,
+    github_url:string,
+    category:Category[],
+    key_tech:string[]
+}
+
+
+export type Category = "react" | "node" | "express" | "mysql" | "mongodb" | "php" | "javascript" | "typescript";

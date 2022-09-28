@@ -11,9 +11,9 @@ const ServiceCard: FunctionComponent<{ service: Service }> = ({
   };
 
   return (
-    <div className="flex p-2 space-x-4 item-center ">
+    <div className="flex justify-between p-2 space-x-4">
       <Icon className="w-12 h-12 text-green" />
-      <div>
+      <div className="">
         <h4 className="font-bold">{title}</h4>
         <p dangerouslySetInnerHTML={createMarkup()} />
       </div>
@@ -22,3 +22,5 @@ const ServiceCard: FunctionComponent<{ service: Service }> = ({
 };
 
 export default ServiceCard;
+// className="flex justify-between p-2 space-x-4"
+// "grid items-center grid-cols-5"
