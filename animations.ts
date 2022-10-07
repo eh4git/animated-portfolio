@@ -23,9 +23,11 @@ export const fadeInUp = {
   export const routeFadeIn = {
     initial: {
       opacity: 0,
+      x:-100
     },
     animate: {
       opacity:1,
+      x:0,
       transition:{
       delay: .1,
       duration: .1
@@ -33,6 +35,7 @@ export const fadeInUp = {
     },
     exit:{
       opacity: 0,
+      x: 100,
       transition:{
       delay: .1,
       ease: "easeInOut"

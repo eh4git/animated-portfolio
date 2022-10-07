@@ -24,4 +24,4 @@ export interface Project{
 }
 
 
-export type Category = "react" | "node" | "express" | "mysql" | "mongodb" | "php" | "javascript" | "typescript";
+export type Category = "react" | "node" | "express" | "mysql" | "mongoDB" | "php" | "javaScript" | "typeScript";

@@ -9,13 +9,14 @@ export default function Document() {
           rel="preconnect"
           href="https://fonts.gstatic.com"
           crossOrigin="true"
+          title="Erik Hirsch | Web Portfolio"
         />
         <link
           href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap"
           rel="stylesheet"
         />
       </Head>
-      <body className="bg-gradient-to-r from-green to-blue-400 dark:from-dark-500 dark:to-dark-700 dark:text-white">
+      <body className="bg-cover h-[100vh] bg-gradient-to-b from-day-200 via-day-300 to-day-500 dark:from-night-500 dark:via-night-300 dark:to-night-200 dark:text-white text-night-700">
         <Main />
         <NextScript />
       </body>

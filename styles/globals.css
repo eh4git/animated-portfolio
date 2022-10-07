@@ -1,7 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+* {
+  user-select: none;
+}
 body {
   background-color: black;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
@@ -9,8 +11,11 @@ body {
   color: #354358;
 }
 
-::-webkit-scrollbar-thumb {
-  background-image: linear-gradient(to right bottom, #00f260, #0575e6);
+.light ::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(to right bottom, #894e30, #bf9774);
+}
+.dark ::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(to right bottom, #243836, #0d1418);
 }
 ::-webkit-scrollbar {
   width: 8px;

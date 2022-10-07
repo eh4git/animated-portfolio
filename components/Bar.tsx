@@ -23,9 +23,9 @@ const Bar: FunctionComponent<{ data: Skill }> = ({
   };
 
   return (
-    <div className="my-2 text-white bg-gray-300 rounded-full dark:bg-dark-300">
+    <div className="my-2 bg-green-200 rounded-full dark:text-white dark:bg-night-200">
       <motion.div
-        className="flex items-center px-4 py-1 rounded-full bg-gradient-to-r from-green to-blue-500"
+        className="flex items-center px-4 py-1 rounded-full bg-gradient-to-br from-day-200 to-day-500 dark:from-night-300 dark:to-night-500"
         style={{ width: level }}
         variants={variants}
         initial="initial"

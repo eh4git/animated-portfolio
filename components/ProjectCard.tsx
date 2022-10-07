@@ -38,11 +38,11 @@ const ProjectCard: FunctionComponent<{
       <p className="my-2 text-center">{name}</p>
 
       {showDetail === id && (
-        <div className="absolute top-0 left-0 z-10 grid w-full h-auto p-2 text-black bg-gray-100 rounded-lg md:p-10 md:grid-cols-2 gap-x-12 dark:text-white dark:bg-dark-100">
+        <div className="absolute top-0 left-0 z-10 grid w-full h-auto p-2 text-black bg-gray-100 rounded-lg md:p-10 md:grid-cols-2 gap-x-12 bg-gradient-to-br dark:from-night-200 dark:text-white dark:to-night-500 shadow-custom-glow">
           <motion.div variants={stagger} initial="initial" animate="animate">
             <motion.div
               variants={fadeInUp}
-              className="border-4 border-gray-100"
+              className="border-4 border-green-100 rounded-md"
             >
               <Image
                 layout="responsive"
@@ -59,14 +59,14 @@ const ProjectCard: FunctionComponent<{
             >
               <a
                 href={github_url}
-                className="flex items-center px-4 py-2 space-x-3 text-lg bg-gray-200 dark:bg-dark-200"
+                className="flex items-center px-4 py-2 space-x-3 text-lg bg-green-100 rounded-md dark:bg-night-700"
               >
                 <AiFillGithub />
                 <span>GitHub</span>
               </a>
               <a
                 href={deployed_url}
-                className="flex items-center px-4 py-2 space-x-3 text-lg bg-gray-200 dark:bg-dark-200"
+                className="flex items-center px-4 py-2 space-x-3 text-lg bg-green-100 rounded-md dark:bg-night-700"
               >
                 <AiFillProject />
                 <span>Project</span>
@@ -90,7 +90,7 @@ const ProjectCard: FunctionComponent<{
               {key_tech.map(tech => (
                 <span
                   key={tech}
-                  className="px-2 py-1 my-1 bg-gray-200 rounded-sm dark:bg-dark-200"
+                  className="px-2 py-1 my-1 bg-green-100 rounded-md dark:bg-night-700"
                 >
                   {tech}
                 </span>
@@ -98,7 +98,7 @@ const ProjectCard: FunctionComponent<{
             </motion.div>
             <button
               onClick={() => setShowDetail(null)}
-              className="absolute p-1 bg-gray-200 rounded-full top-3 right-3 focus:outline-none dark:bg-dark-200"
+              className="absolute p-1 bg-green-100 rounded-full top-3 right-3 focus:outline-none dark:bg-night-700"
             >
               <IoClose size={30} />
             </button>

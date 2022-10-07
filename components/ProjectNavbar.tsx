@@ -22,11 +22,12 @@ const ProjectNavbar: FunctionComponent<{
 }> = props => {
   return (
     <div className="flex px-3 py-2 space-x-3 overflow-x-auto list-none">
+      <NavItem value="javaScript" {...props} />
       <NavItem value="react" {...props} />
       <NavItem value="node" {...props} />
       <NavItem value="express" {...props} />
       <NavItem value="mysql" {...props} />
-      <NavItem value="mongodb" {...props} />
+      <NavItem value="mongoDB" {...props} />
     </div>
   );
 };
