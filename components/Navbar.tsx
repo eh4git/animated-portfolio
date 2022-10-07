@@ -26,13 +26,13 @@ const NavItem: FunctionComponent<{
 
 const Navbar = () => {
   const [activeItem, setActiveItem] = useState<string>("");
-
   const { pathname } = useRouter();
 
   useEffect(() => {
     if (pathname === "/") setActiveItem("About");
     if (pathname === "/projects") setActiveItem("Projects");
     if (pathname === "/resume") setActiveItem("Resume");
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return (
     <div className="flex justify-between px-5 py-3 my-3">
