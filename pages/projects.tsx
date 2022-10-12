@@ -35,7 +35,7 @@ const Projects = () => {
       animate="animate"
       exit="exit"
       className="px-5 py-2"
-      style={{ height: "75vh" }}
+      // style={{ height: "75vh" }}
     >
       <ProjectNavbar
         handleFilteredCategories={handleFilteredCategories}

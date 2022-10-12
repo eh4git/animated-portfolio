@@ -30,7 +30,7 @@ const Sidebar = () => {
       </h3>
 
       <p className="px-2 py-1 my-3 rounded-full bg-gradient-to-br from-day-200 to-day-500 dark:from-night-300 dark:to-night-500 dark:hover:shadow-custom-glow shadow-custom-light">
-        Web Developer
+        Full-Stack Web Developer
       </p>
       <a
         href="/assets/Erik_Hirsch_Software_Developer.pdf"
@@ -43,13 +43,13 @@ const Sidebar = () => {
 
       {/* Icons & Address*/}
       <div className="flex justify-around w-9/12 mx-auto my-5 text-day-500 dark:text-green-200 md:w-full">
-        <a href="https://github.com/eh4git">
+        <a href="https://github.com/eh4git" target="_blank">
           <AiFillGithub className="w-8 h-8 rounded-full cursor-pointer dark:hover:shadow-custom-glow" />
         </a>
-        <a href="https://www.linkedin.com/in/e-hirsch/">
+        <a href="https://www.linkedin.com/in/e-hirsch/" target="_blank">
           <AiFillLinkedin className="w-8 h-8 rounded-full cursor-pointer dark:hover:shadow-custom-glow" />
         </a>
-        <a href="https://www.codewars.com/users/eh4CW">
+        <a href="https://www.codewars.com/users/eh4CW" target="_blank">
           <SiCodewars className="w-8 h-8 rounded-full cursor-pointer dark:hover:shadow-custom-glow" />
         </a>
       </div>
