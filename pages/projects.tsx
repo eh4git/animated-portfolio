@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ProjectCard from "../components/ProjectCard";
 import ProjectNavbar from "../components/ProjectNavbar";
 import { projects as projectsData } from "../data";
@@ -16,7 +16,11 @@ const Projects = () => {
       setActive(category);
       return;
     }
-
+    if (category === active) {
+      setProjects(projectsData);
+      setActive("all");
+      return;
+    }
     const filteredProjects = projectsData.filter(project =>
       project.category.includes(category)
     );

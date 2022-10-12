@@ -38,7 +38,7 @@ const ProjectCard: FunctionComponent<{
       <p className="my-2 text-center">{name}</p>
 
       {showDetail === id && (
-        <div className="absolute top-0 left-0 z-10 grid w-full h-auto p-2 text-black bg-gray-100 rounded-lg md:p-10 md:grid-cols-2 gap-x-12 bg-gradient-to-br dark:from-night-200 dark:text-white dark:to-night-500 shadow-custom-glow">
+        <div className="absolute top-0 left-0 z-10 grid w-full h-auto p-2 text-black bg-gray-100 rounded-lg md:p-10 md:grid-cols-2 gap-x-12 bg-gradient-to-br dark:from-night-200 dark:text-green-100 dark:to-night-500 shadow-custom-glow">
           <motion.div variants={stagger} initial="initial" animate="animate">
             <motion.div
               variants={fadeInUp}

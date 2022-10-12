@@ -6,11 +6,18 @@ export const NavItem: FunctionComponent<{
   handleFilteredCategories: Function;
   active: string;
 }> = ({ value, handleFilteredCategories, active }) => {
-  let className = "capitalize cursor-pointer select-none hover:text-green";
-  if (active === value) className += " text-green";
+  // let className = "capitalize cursor-pointer select-none hover:text-green";
+  // if (active === value) className += " text-green";
 
   return (
-    <li className={className} onClick={() => handleFilteredCategories(value)}>
+    <li
+      className={
+        active === value
+          ? "capitalize cursor-pointer select-none hover:text-green text-green"
+          : "capitalize cursor-pointer select-none hover:text-green"
+      }
+      onClick={() => handleFilteredCategories(value)}
+    >
       {value}
     </li>
   );
