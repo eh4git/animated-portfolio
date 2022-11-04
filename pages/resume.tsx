@@ -50,8 +50,8 @@ const resume = () => {
         <div>
           <h5 className="my-3 text-2xl font-bold">Tools & Software</h5>
           <div className="my-2">
-            {tools.map(language => (
-              <Bar data={language} key={language.name} />
+            {tools.map(tool => (
+              <Bar data={tool} key={tool.name} />
             ))}
           </div>
         </div>

@@ -17,7 +17,7 @@ export default function Document() {
         />
       </Head>
       <body
-        className="bg-no-repeat bg-cover lg:h-screen bg-gradient-to-b from-day-200 via-day-300 to-day-500 dark:from-night-500 dark:via-night-300 dark:to-night-200 dark:text-white text-night-700"
+        className="bg-no-repeat bg-cover bg-gradient-to-b from-day-100 via-day-100 via-day-500 to-day-700 dark:from-night-500 dark:via-night-300 dark:to-night-200 dark:text-white text-night-700"
         // style={{ height: "100vh" }}
       >
         <Main />

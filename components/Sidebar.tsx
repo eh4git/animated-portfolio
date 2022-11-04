@@ -25,7 +25,7 @@ const Sidebar = () => {
         quality="100"
       />
       <h3 className="my-4 text-3xl font-medium tracking-wider font-kaushan">
-        <span className="mr-1 text-day-500 dark:text-green-200">Erik</span>
+        <span className="mr-1 text-green-700 dark:text-green-200">Erik</span>
         <span>Hirsch</span>
       </h3>
 
@@ -42,7 +42,7 @@ const Sidebar = () => {
       </a>
 
       {/* Icons & Address*/}
-      <div className="flex justify-around w-9/12 mx-auto my-5 text-day-500 dark:text-green-200 md:w-full">
+      <div className="flex justify-around w-9/12 mx-auto my-5 text-day-200 dark:text-green-200 md:w-full">
         <a href="https://github.com/eh4git" target="_blank">
           <AiFillGithub className="w-8 h-8 rounded-full cursor-pointer dark:hover:shadow-custom-glow" />
         </a>
@@ -55,7 +55,7 @@ const Sidebar = () => {
       </div>
 
       <div
-        className="py-4 my-5 bg-green-300 bg-gradient-to-br from-day-200 to-day-300 dark:from-night-300 dark:to-night-500"
+        className="py-4 my-5 bg-green-300 bg-gradient-to-br from-day-200 to-day-500 dark:from-night-300 dark:to-night-500"
         style={{ marginLeft: "-1rem", marginRight: "-1rem" }}
       >
         <div className="flex items-center justify-center space-x-2">

@@ -1,6 +1,7 @@
 import { RiComputerLine, RiCloudLine } from 'react-icons/ri';
 import { FiMonitor, FiDatabase } from 'react-icons/fi';
 import { IoEarth } from 'react-icons/io5';
+import { FaJava } from 'react-icons/fa'
 import { Project, Service, Skill } from './type';
 import { SiJavascript, SiPhp, SiJava, SiMysql, SiReact, SiHtml5, SiCss3, SiMongodb } from 'react-icons/si'
 import { GrStackOverflow, GrServer } from 'react-icons/gr'
@@ -73,8 +74,8 @@ export const languages:Skill[] = [
     },
     {
         name: 'Java',
-        level: "20%",
-        Icon: SiJava
+        level: "60%",
+        Icon: FaJava
     },
   
 ]
@@ -86,9 +87,9 @@ export const tools:Skill[] = [
         Icon: SiJavascript
     },
     {
-        name: 'React Developer tools',
+        name: 'React Dev Tools',
         level: "70%",
-        Icon: SiJava
+        Icon: FaJava
     },
   
 ]
