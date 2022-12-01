@@ -8,6 +8,7 @@ module.exports = {
   theme: {
     fontFamily: {
       kaushan: ["Kaushan Script"],
+      roboto: ["Roboto", "Roboto Slab"],
     },
 
     boxShadow: {
@@ -22,7 +23,7 @@ module.exports = {
     extend: {
       colors: {
         green: {
-          DEFAULT: "#8b8c64",
+          DEFAULT: "#65654b",
           100: "#d1d1c1",
           200: "#a2a383",
           300: "#878c64",

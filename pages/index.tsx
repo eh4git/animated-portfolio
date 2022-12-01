@@ -13,17 +13,32 @@ const index = () => {
       animate="animate"
       exit="exit"
     >
-      <h5 className="my-3 text-base font-medium">
-        I am an enthusiastic full stack web developer. I have worked with a
-        range of tech stacks including....
+      <h5 className="p-2 my-3 text-base font-semibold">
+        I am an enthusiastic full stack web developer with a passion for
+        developing engaging interfaces and integrating seamless data-flows. My
+        passion has lead me to research and utilize a wide array of technologies
+        from HTML/CSS/JavaScript to Next.js and Apollo, as well as AWS and
+        Google cloud services.
+        <br />
+        <br />
+        Currently I am a Teaching Assistant for a full-stack coding boot camp
+        hosted by the University of California, Riverside and provided by edX.
+        In addition to that I also tutor in full stack development for edX,
+        providing services for students from universities across the US, UK, and
+        Australia.
+        <br />
+        <br />
+        I am always open to new opportunities and love to collaborate, please
+        reach out if you have anything I may be interested in!
+        <br />
+        <br />
+        Thanks for stopping by!
       </h5>
       <div
-        className="flex-grow p-4 mt-5 bg-gradient-to-b from-day-100 to-day-200 dark:from-night-700 dark:to-night-500"
+        className="flex-grow p-4 mt-5 border-t-4 bg-gradient-to-b from-green to-green-500 dark:from-night-700 dark:to-night-500 border-brown-700"
         style={{ marginRight: "-1.5rem", marginLeft: "-1.5rem" }}
       >
-        <h6 className="my-4 text-xl font-bold tracking-wide text-day-100">
-          What I Offer
-        </h6>
+        <h6 className="my-4 text-xl font-bold tracking-wide">What I Offer</h6>
         <motion.div
           className="grid gap-6 lg:grid-cols-2"
           variants={stagger}
@@ -34,7 +49,7 @@ const index = () => {
             <motion.div
               key={service.title}
               variants={fadeInUp}
-              className="col-span-2 p-2 rounded-lg bg-gradient-to-br from-day-200 via-day-300 to-day-500 md:col-span-1 dark:from-night-300 dark:to-night-200 shadow-custom-raised"
+              className="col-span-2 p-2 rounded-lg bg-gradient-to-br from-day-200 to-day-500 md:col-span-1 dark:from-night-300 dark:to-night-200 shadow-custom-raised"
             >
               <ServiceCard service={service} key={service.title} />
             </motion.div>

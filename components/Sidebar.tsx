@@ -25,7 +25,7 @@ const Sidebar = () => {
         quality="100"
       />
       <h3 className="my-4 text-3xl font-medium tracking-wider font-kaushan">
-        <span className="mr-1 text-green-700 dark:text-green-200">Erik</span>
+        <span className="mr-1 text-green-200">Erik</span>
         <span>Hirsch</span>
       </h3>
 
@@ -42,7 +42,7 @@ const Sidebar = () => {
       </a>
 
       {/* Icons & Address*/}
-      <div className="flex justify-around w-9/12 mx-auto my-5 text-day-200 dark:text-green-200 md:w-full">
+      <div className="flex justify-around w-9/12 mx-auto my-5 text-green-200 md:w-full">
         <a href="https://github.com/eh4git" target="_blank">
           <AiFillGithub className="w-8 h-8 rounded-full cursor-pointer dark:hover:shadow-custom-glow" />
         </a>
