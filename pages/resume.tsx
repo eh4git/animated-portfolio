@@ -16,12 +16,12 @@ const resume = () => {
           <h5 className="my-3 text-2xl font-bold">Education</h5>
           <div>
             <h5 className="my-2 text-xl font-bold">
-              Full Stack Web Development Certificate
+              Full Stack Web Development Certification
             </h5>
-            <p className="font-semibold">UCLA Extension (2020)</p>
+            <p className="font-semibold">UCLA Extension - 2020</p>
             <p>
-              Completed an intensive 12 week program that covered Html5, CSS3,
-              Javascript, Node.js, Express, MySQL, MongoDB, ORM/DR, and React.
+              Completed an intensive program that covered Html5, CSS3,
+              Javascript, Node.js, Express, MySQL, MongoDB, ORM/DM, and React.
             </p>
           </div>
         </motion.div>
@@ -29,7 +29,7 @@ const resume = () => {
           <h5 className="my-3 text-2xl font-bold">Experience</h5>
           <div>
             <h5 className="my-2 text-xl font-bold">Teaching Assistant/Tutor</h5>
-            <p className="font-semibold">UCI/UCR (2020 - present)</p>
+            <p className="font-semibold">UCI/UCR (2020 - Present)</p>
             <p>
               Helping upcoming developers to reach their potential. Instruct
               students in a wide variety of web development technologies. Manage

@@ -12,6 +12,8 @@ import {
   SiHtml5,
   SiCss3,
   SiMongodb,
+  SiNodedotjs,
+  SiApollographql,
 } from "react-icons/si";
 import { GrStackOverflow, GrServer } from "react-icons/gr";
 import { HiServer, HiDesktopComputer } from "react-icons/hi";
@@ -78,7 +80,7 @@ export const languages: Skill[] = [
   },
   {
     name: "PHP",
-    level: "75%",
+    level: "80%",
     Icon: SiPhp,
   },
   {
@@ -93,7 +95,7 @@ export const languages: Skill[] = [
   },
   {
     name: "Java",
-    level: "60%",
+    level: "30%",
     Icon: FaJava,
   },
 ];
@@ -101,15 +103,40 @@ export const languages: Skill[] = [
 export const tools: Skill[] = [
   {
     name: "Visual Studio Code",
-    level: "90%",
+    level: "95%",
     Icon: SiJavascript,
   },
   {
     name: "React Dev Tools",
     level: "70%",
-    Icon: FaJava,
+    Icon: SiReact,
   },
-];
+  {
+    name: "MySQL Workbench",
+    level: "80%",
+    Icon: SiMysql,
+  },
+  {
+    name: "Git",
+    level: "90%",
+    Icon: FaGitAlt,
+  },
+  {
+    name: "NPM",
+    level: "85%",
+    Icon: SiNodedotjs,
+  },
+  {
+    name: "Atlas",
+    level: "75%",
+    Icon: SiMongodb,
+  },
+  {
+    name: "Apollo GraphQL",
+    level: "75%",
+    Icon: SiApollographql,
+  },
+].sort((a, b) => parseInt(b.level) - parseInt(a.level));
 
 export const projects: Project[] = [
   {

@@ -14,7 +14,7 @@ body {
 }
 
 .light ::-webkit-scrollbar-thumb {
-  background-image: linear-gradient(to right bottom, #894e30, #bf9774);
+  background-image: linear-gradient(to right bottom, #65654b, #5f5f44);
 }
 .dark ::-webkit-scrollbar-thumb {
   background-image: linear-gradient(to right bottom, #243836, #0d1418);
@@ -24,7 +24,7 @@ body {
   height: 8px;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1144px) {
   @media (min-height: 825px) {
     html {
       height: 100%;
