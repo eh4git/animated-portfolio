@@ -43,13 +43,21 @@ const Sidebar = () => {
 
       {/* Icons & Address*/}
       <div className="flex justify-around w-9/12 mx-auto my-5 text-green-200 md:w-full">
-        <a href="https://github.com/eh4git" target="_blank">
+        <a href="https://github.com/eh4git" target="_blank" rel="noreferrer">
           <AiFillGithub className="w-8 h-8 rounded-full cursor-pointer dark:hover:shadow-custom-glow" />
         </a>
-        <a href="https://www.linkedin.com/in/e-hirsch/" target="_blank">
+        <a
+          href="https://www.linkedin.com/in/e-hirsch/"
+          target="_blank"
+          rel="noreferrer"
+        >
           <AiFillLinkedin className="w-8 h-8 rounded-full cursor-pointer dark:hover:shadow-custom-glow" />
         </a>
-        <a href="https://www.codewars.com/users/eh4CW" target="_blank">
+        <a
+          href="https://www.codewars.com/users/eh4CW"
+          target="_blank"
+          rel="noreferrer"
+        >
           <SiCodewars className="w-8 h-8 rounded-full cursor-pointer dark:hover:shadow-custom-glow" />
         </a>
       </div>
