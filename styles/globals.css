@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 * {
   user-select: none;
 }
@@ -10,7 +11,6 @@ body {
   font-family: "Roboto", "Roboto Slab", "Lucida Sans", "Lucida Sans Regular",
     "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   color: #354358;
-  /* color: #000000; */
 }
 
 .light ::-webkit-scrollbar-thumb {
@@ -23,6 +23,7 @@ body {
   width: 8px;
   height: 8px;
 }
+
 @media (min-width: 1024px) {
   @media (min-height: 825px) {
     html {

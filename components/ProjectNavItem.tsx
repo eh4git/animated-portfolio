@@ -13,8 +13,8 @@ const ProjectNavItem: FunctionComponent<{
     <li
       className={
         active === value
-          ? "capitalize cursor-pointer select-none hover:text-green text-green"
-          : "capitalize cursor-pointer select-none hover:text-green"
+          ? "capitalize cursor-pointer select-none hover:text-night-300 text-green-200"
+          : "capitalize cursor-pointer select-none hover:text-green-200"
       }
       onClick={() => handleFilteredCategories(value)}
     >

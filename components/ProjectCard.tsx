@@ -36,9 +36,10 @@ const ProjectCard: FunctionComponent<{
         onClick={() => setShowDetail(id)}
       />
       <p className="my-2 text-center">{name}</p>
-
+      {/*//*  Was originally position absolute. Currently set to
+       */}
       {showDetail === id && (
-        <div className="absolute top-0 left-0 z-10 grid w-full h-auto p-2 text-black bg-gray-100 rounded-lg md:p-10 md:grid-cols-2 gap-x-12 bg-gradient-to-br dark:from-night-200 dark:text-green-100 dark:to-night-500 shadow-custom-glow">
+        <div className="fixed lg:absolute lg:top-0 lg:left-0 lg:w-full left-[5%] top-[2%] z-10 grid w-[90%] h-auto p-3 sm:p-10 text-black bg-gray-100 rounded-lg bottom- lg:grid-cols-2 gap-x-12 bg-gradient-to-br dark:from-night-200 dark:text-green-100 dark:to-night-500 shadow-custom-glow">
           <motion.div variants={stagger} initial="initial" animate="animate">
             <motion.div
               variants={fadeInUp}
@@ -80,9 +81,17 @@ const ProjectCard: FunctionComponent<{
             >
               {name}
             </motion.h2>
-            <motion.h3 variants={fadeInUp} className="mb-3 font-medium">
-              {description}
-            </motion.h3>
+            <div>
+              {description.map(section => (
+                <motion.h3
+                  key={section.slice(1, 5).trim()}
+                  variants={fadeInUp}
+                  className="mb-3 font-medium"
+                >
+                  {section}
+                </motion.h3>
+              ))}
+            </div>
             <motion.div
               variants={fadeInUp}
               className="flex flex-wrap mt-5 space-x-2 text-sm tracking-wider"

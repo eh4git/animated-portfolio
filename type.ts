@@ -15,7 +15,7 @@ export interface Skill{
 export interface Project{
     id: number,
     name:string,
-    description:string,
+    description:string[],
     image_path:string,
     deployed_url:string,
     github_url:string,
@@ -24,4 +24,4 @@ export interface Project{
 }
 
 
-export type Category = "react" | "node" | "express" | "mysql" | "mongoDB" | "php" | "javaScript" | "typeScript";
+export type Category = "front-End" | "back-End" | "full-Stack" | "mobile" ;
