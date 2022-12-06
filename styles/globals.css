@@ -24,10 +24,8 @@ body {
   height: 8px;
 }
 
-@media (min-width: 1144px) {
-  @media (min-height: 825px) {
-    html {
-      height: 100%;
-    }
+@media (min-width: 2044px) {
+  html {
+    height: 100%;
   }
 }

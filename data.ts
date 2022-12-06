@@ -34,19 +34,19 @@ export const services: Service[] = [
   {
     title: "Full Stack",
     about:
-      "I can build beautiful full stack applications using <b>HTML</b>, <b>CSS</b>, <b>React</b>, and <b>MySQL</b> or <b>MongoDB</b>.",
+      "I can build beautiful full stack applications using a wide variety of tools such as <b>HTML</b>, <b>CSS</b>, <b>React</b>, and <b>MySQL</b> or <b>MongoDB</b>.",
     Icon: GrStackOverflow,
   },
   {
     title: "Databases",
     about:
-      "Provide applications with highly available data from an array of databases such as, <b>MySQL</b>, <b>MongoDB</b>, and <b>Firebase</b>.",
+      "Structure data, with or with out ORM/ODM, for optimized queries in databases such as, <b>MySQL</b>, <b>MongoDB</b>, and <b>Firebase</b>.",
     Icon: FiDatabase,
   },
   {
     title: "Cloud Services",
     about:
-      "<b>AWS</b>, <b>GCP</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Utilizing <b>AWS</b> or <b>GCP</b> I can implement cloud based solutions that provide highly available data to all types of applications.",
     Icon: RiCloudLine,
   },
   {
