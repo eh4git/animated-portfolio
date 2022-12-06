@@ -24,8 +24,8 @@ body {
   height: 8px;
 }
 
-@media (min-width: 2044px) {
+@media (min-width: 1144px) {
   html {
-    height: 100%;
+    min-height: 100%;
   }
 }
