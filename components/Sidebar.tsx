@@ -33,8 +33,8 @@ const Sidebar = () => {
         Full-Stack Web Developer
       </p>
       <a
-        href="/assets/Erik_Hirsch_Software_Developer.pdf"
-        download="Erik_Hirsch_Software_Developer.pdf"
+        href="/assets/SoftwareDeveloper.pdf"
+        download="Erik_Hirsch_Resume.pdf"
         className="flex items-center justify-center px-2 py-1 my-3 rounded-full cursor-pointer bg-gradient-to-br from-day-200 to-day-500 dark:from-night-300 dark:to-night-500 dark:hover:shadow-custom-glow dark:hover:z-10 shadow-custom-light"
       >
         <GiTie className="w-6 h-6" />

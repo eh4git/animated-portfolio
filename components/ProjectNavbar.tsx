@@ -8,8 +8,8 @@ const ProjectNavbar: FunctionComponent<{
 }> = props => {
   return (
     <div className="flex px-3 py-2 space-x-3 overflow-x-auto list-none">
-      <ProjectNavItem value="front-End" {...props} />
-      <ProjectNavItem value="back-End" {...props} />
+      <ProjectNavItem value="front-end" {...props} />
+      <ProjectNavItem value="back-end" {...props} />
       <ProjectNavItem value="full-Stack" {...props} />
       <ProjectNavItem value="mobile" {...props} />
     </div>

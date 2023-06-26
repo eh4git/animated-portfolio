@@ -2,7 +2,7 @@ import { FunctionComponent } from "react";
 import { Category } from "../type";
 
 const ProjectNavItem: FunctionComponent<{
-  value: Category | "all";
+  value: Category;
   handleFilteredCategories: Function;
   active: string;
 }> = ({ value, handleFilteredCategories, active }) => {

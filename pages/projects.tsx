@@ -10,17 +10,18 @@ const Projects = () => {
   const [active, setActive] = useState("all");
   const [showDetail, setShowDetail] = useState<number | null>(null);
 
-  const handleFilteredCategories = (category: Category | "all") => {
-    if (category === "all") {
-      setProjects(projectsData);
-      setActive(category);
-      return;
-    }
+  const handleFilteredCategories = (category: Category) => {
     if (category === active) {
+      console.log(category === active, category, active);
       setProjects(projectsData);
       setActive("all");
       return;
     }
+    // if (category === active) {
+    //   setProjects(projectsData);
+    //   setActive("all");
+    //   return;
+    // }
     const filteredProjects = projectsData.filter(project =>
       project.category.includes(category)
     );

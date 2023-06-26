@@ -60,22 +60,22 @@ export const services: Service[] = [
 export const languages: Skill[] = [
   {
     name: "Javascript",
-    level: "90%",
+    level: "95%",
     Icon: SiJavascript,
   },
   {
     name: "HTML5",
-    level: "90%",
+    level: "95%",
     Icon: SiHtml5,
   },
   {
     name: "React",
-    level: "85%",
+    level: "90%",
     Icon: SiReact,
   },
   {
     name: "CSS3",
-    level: "80%",
+    level: "85%",
     Icon: SiCss3,
   },
   {
@@ -144,12 +144,12 @@ export const projects: Project[] = [
     name: "Once Upon An Adventure",
     description: [
       "An online RPG set in a fantasy world. Select a character then interact with a range of unique NPC to complete mini-games. Earn coins and face the final boss.",
-      "Password authenticated account, data is hashed before save. User sessions via JSON Web Tokens. Data is saved in MongoDB. Redux to handles game state and logic.",
+      "Password authenticated account, data is hashed before save. User sessions via JSON Web Tokens. Data is saved in MongoDB. Utilizes redux to handle game state and logic.",
     ],
     image_path: "https://d3kccomi9ge1kz.cloudfront.net/onceUponAnAdventure.png",
     deployed_url: "https://www.onceuaa.com/",
     github_url: "https://github.com/eh4git/once-upon-an-adventure",
-    category: ["full-Stack", "back-End"],
+    category: ["full-Stack", "back-end"],
     key_tech: ["Node.js", "React", "Redux", "MongoDB"],
   },
   {
@@ -162,7 +162,7 @@ export const projects: Project[] = [
     image_path: "https://d3kccomi9ge1kz.cloudfront.net/Ecommerce.png",
     deployed_url: "https://scrimba-ec-ommerce.vercel.app/",
     github_url: "https://github.com/eh4git/Scrimba_ECommerce",
-    category: ["front-End"],
+    category: ["front-end"],
     key_tech: ["JavaScript", "React", "CSS3"],
   },
   {
@@ -183,12 +183,12 @@ export const projects: Project[] = [
     name: "Minesweeper",
     description: [
       "The classic game of minesweeper with a few improvements. Users always open multiple tiles on their first click and it will never be a bomb. Choose four different difficulty settings.",
-      "A constant work in progress with new features in the works. SCSS is used to give the game a very retro feel.",
+      "A constant work in progress with new features in the works. SCSS is used for styling and gives the game a very retro feel.",
     ],
     image_path: "https://d3kccomi9ge1kz.cloudfront.net/react-minesweeper.png",
     deployed_url: "https://react-minesweeper-ten.vercel.app/",
     github_url: "https://github.com/eh4git/react_minesweeper",
-    category: ["front-End"],
+    category: ["front-end"],
     key_tech: ["React", "Typescript", "SCSS"],
   },
   {
@@ -201,7 +201,7 @@ export const projects: Project[] = [
     image_path: "https://d3kccomi9ge1kz.cloudfront.net/storyTime.png",
     deployed_url: "https://fathomless-waters-70908.herokuapp.com/",
     github_url: "https://github.com/eh4git/StoryTime",
-    category: ["full-Stack", "back-End"],
+    category: ["full-Stack", "back-end"],
     key_tech: ["JavaScript", "MySQL", "Express", "Node.js"],
   },
   {
@@ -215,7 +215,19 @@ export const projects: Project[] = [
       "https://d3kccomi9ge1kz.cloudfront.net/rick_kittson_hardwood_flooring.png",
     deployed_url: "https://rick-kittson-hardwood-flooring.vercel.app/",
     github_url: "https://github.com/eh4git/Rick_Kittson_Hardwood_Flooring",
-    category: ["front-End"],
+    category: ["front-end"],
     key_tech: ["HTML5", "CSS3", "JavaScript", "Gulp.js"],
+  },
+  {
+    id: 7,
+    name: "Chatroom App",
+    description: [
+      "A bear bones chatroom application. Users can create a username and join a chatroom. Users can send messages to the chatroom and see messages from other users. Implements OpenAI's Chat-GPT and PurgoMalum's REST API to filter messages in the moderated chatroom.",
+    ],
+    image_path: "https://d3kccomi9ge1kz.cloudfront.net/image-coming-soon.jpg",
+    deployed_url: "https://socket-chat.herokuapp.com/chatroom",
+    github_url: "https://github.com/eh4git/express-sockets-boiler",
+    category: ["full-Stack", "back-end"],
+    key_tech: ["Express", "Socket.io", "JavaScript", "Node.js"],
   },
 ];
