@@ -24,6 +24,8 @@ const ProjectCard: FunctionComponent<{
   showDetail,
   setShowDetail,
 }) => {
+
+  
   return (
     <div>
       <Image

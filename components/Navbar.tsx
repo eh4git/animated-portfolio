@@ -8,8 +8,9 @@ const NavItem: FunctionComponent<{
   name: string;
   route: string;
 }> = ({ activeItem, setActiveItem, name, route }) => {
+  //! Add conditional logic to scroll to scroll to the top of the page container
   return activeItem !== name ? (
-    <Link href={route}>
+    <Link href={route} scroll={false}>
       <a>
         <span
           onClick={() => setActiveItem(name)}

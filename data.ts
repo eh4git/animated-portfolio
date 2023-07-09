@@ -1,7 +1,7 @@
 import { RiComputerLine, RiCloudLine } from "react-icons/ri";
 import { FiMonitor, FiDatabase } from "react-icons/fi";
 import { IoEarth } from "react-icons/io5";
-import { FaJava, FaGitAlt } from "react-icons/fa";
+import { FaJava, FaGitAlt, FaNpm } from "react-icons/fa";
 import { Project, Service, Skill } from "./type";
 import {
   SiJavascript,
@@ -14,6 +14,8 @@ import {
   SiMongodb,
   SiNodedotjs,
   SiApollographql,
+  SiVisualstudiocode,
+  SiNpm,
 } from "react-icons/si";
 import { GrStackOverflow, GrServer } from "react-icons/gr";
 import { HiServer, HiDesktopComputer } from "react-icons/hi";
@@ -104,7 +106,7 @@ export const tools: Skill[] = [
   {
     name: "Visual Studio Code",
     level: "95%",
-    Icon: SiJavascript,
+    Icon: SiVisualstudiocode,
   },
   {
     name: "React Dev Tools",
@@ -123,8 +125,8 @@ export const tools: Skill[] = [
   },
   {
     name: "NPM",
-    level: "85%",
-    Icon: SiNodedotjs,
+    level: "90%",
+    Icon: FaNpm,
   },
   {
     name: "Atlas",

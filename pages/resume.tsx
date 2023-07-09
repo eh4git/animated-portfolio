@@ -20,7 +20,7 @@ const resume = () => {
             </h5>
             <p className="font-semibold">UCLA Extension - 2020</p>
             <p>
-              Completed an intensive program that covered Html5, CSS3,
+              Completed an intensive program that covered HTML5, CSS3,
               Javascript, Node.js, Express, MySQL, MongoDB, ORM/DM, and React.
             </p>
           </div>
