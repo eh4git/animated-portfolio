@@ -3,6 +3,7 @@ import ServiceCard from "../components/ServiceCard";
 import { services } from "../data";
 import { motion } from "framer-motion";
 import { fadeInUp, routeFadeIn, stagger } from "../animations";
+import InViewWrapper from "../components/InViewWrapper";
 
 const index = () => {
   return (
@@ -39,12 +40,7 @@ const index = () => {
         style={{ marginRight: "-1.5rem", marginLeft: "-1.5rem" }}
       >
         <h6 className="my-4 text-xl font-bold tracking-wide">What I Offer</h6>
-        <motion.div
-          className="grid gap-6 lg:grid-cols-2"
-          variants={stagger}
-          initial="initial"
-          animate="animate"
-        >
+        <InViewWrapper className="grid gap-6 lg:grid-cols-2" variants={stagger}>
           {services.map(service => (
             <motion.div
               key={service.title}
@@ -54,7 +50,7 @@ const index = () => {
               <ServiceCard service={service} key={service.title} />
             </motion.div>
           ))}
-        </motion.div>
+        </InViewWrapper>
       </div>
     </motion.div>
   );
