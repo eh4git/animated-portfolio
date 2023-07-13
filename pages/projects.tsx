@@ -1,18 +1,31 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import ProjectCard from "../components/ProjectCard";
 import ProjectNavbar from "../components/ProjectNavbar";
 import { projects as projectsData } from "../data";
 import { Category } from "../type";
-import { motion } from "framer-motion";
 import { fadeInUp, routeFadeIn, stagger } from "../animations";
+import { motion, useAnimation, useInView } from "framer-motion";
+
 const Projects = () => {
   const [projects, setProjects] = useState(projectsData);
   const [active, setActive] = useState("all");
   const [showDetail, setShowDetail] = useState<number | null>(null);
 
+  const controls = useAnimation();
+  const ref = useRef(null);
+  const inView = useInView(ref);
+
+  useEffect(() => {
+    if (inView) {
+      controls.start("animate");
+    } else {
+      controls.start("initial");
+    }
+  }, [controls, inView, projects]);
+
   const handleFilteredCategories = (category: Category) => {
+    console.log(category === active, category, active);
     if (category === active) {
-      console.log(category === active, category, active);
       setProjects(projectsData);
       setActive("all");
       return;
@@ -43,16 +56,19 @@ const Projects = () => {
         active={active}
       />
       <motion.div
+        ref={ref}
         variants={stagger}
         initial="initial"
-        animate="animate"
+        animate={controls}
         className="relative grid grid-cols-12 gap-4 my-3"
+        layout
       >
         {projects.map(project => (
           <motion.div
             key={project.name}
             variants={fadeInUp}
             className="col-span-12 p-2 rounded-lg from-day-200 to-day-500 sm:col-span-6 lg:col-span-4 bg-gradient-to-br dark:from-night-200 dark:to-night-500 shadow-custom-raised"
+            layoutId={project.name}
           >
             <ProjectCard
               project={project}
