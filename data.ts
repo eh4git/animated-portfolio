@@ -1,12 +1,11 @@
 import { RiComputerLine, RiCloudLine } from "react-icons/ri";
 import { FiMonitor, FiDatabase } from "react-icons/fi";
-import { IoEarth } from "react-icons/io5";
+// import { IoEarth } from "react-icons/io5";
 import { FaJava, FaGitAlt, FaNpm } from "react-icons/fa";
 import { Project, Service, Skill } from "./type";
 import {
   SiJavascript,
   SiPhp,
-  SiJava,
   SiMysql,
   SiReact,
   SiHtml5,
@@ -15,10 +14,14 @@ import {
   SiNodedotjs,
   SiApollographql,
   SiVisualstudiocode,
-  SiNpm,
+  SiGraphql,
+  SiTypescript,
+  SiAmazonaws,
 } from "react-icons/si";
 import { GrStackOverflow, GrServer } from "react-icons/gr";
 import { HiServer, HiDesktopComputer } from "react-icons/hi";
+
+const byLevel = (a: Skill, b: Skill) => parseInt(b.level) - parseInt(a.level);
 
 export const services: Service[] = [
   {
@@ -66,6 +69,21 @@ export const languages: Skill[] = [
     Icon: SiJavascript,
   },
   {
+    name: "Typescript",
+    level: "80%",
+    Icon: SiTypescript,
+  },
+  {
+    name: "Node.js",
+    level: "95%",
+    Icon: SiNodedotjs,
+  },
+  {
+    name: "GraphQL",
+    level: "85%",
+    Icon: SiGraphql,
+  },
+  {
     name: "HTML5",
     level: "95%",
     Icon: SiHtml5,
@@ -73,6 +91,11 @@ export const languages: Skill[] = [
   {
     name: "React",
     level: "90%",
+    Icon: SiReact,
+  },
+  {
+    name: "React Native",
+    level: "70%",
     Icon: SiReact,
   },
   {
@@ -100,7 +123,7 @@ export const languages: Skill[] = [
     level: "30%",
     Icon: FaJava,
   },
-];
+].sort(byLevel);
 
 export const tools: Skill[] = [
   {
@@ -119,6 +142,11 @@ export const tools: Skill[] = [
     Icon: SiMysql,
   },
   {
+    name: "Compass",
+    level: "80%",
+    Icon: SiMongodb,
+  },
+  {
     name: "Git",
     level: "90%",
     Icon: FaGitAlt,
@@ -130,15 +158,20 @@ export const tools: Skill[] = [
   },
   {
     name: "Atlas",
-    level: "75%",
+    level: "80%",
     Icon: SiMongodb,
   },
   {
-    name: "Apollo GraphQL",
+    name: "AWS",
+    level: "75%",
+    Icon: SiAmazonaws,
+  },
+  {
+    name: "Apollo",
     level: "75%",
     Icon: SiApollographql,
   },
-].sort((a, b) => parseInt(b.level) - parseInt(a.level));
+].sort(byLevel);
 
 export const projects: Project[] = [
   {

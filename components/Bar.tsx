@@ -21,7 +21,7 @@ const Bar: FunctionComponent<{ data: Skill }> = ({
       width: barWidth,
       opacity: 1,
       transition: {
-        delay: 0.5,
+        delay: 0.2,
         duration: 3,
         // velocity: 10,
         type: "spring",

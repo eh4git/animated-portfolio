@@ -85,9 +85,9 @@ const Sidebar = () => {
       >
         <div className="flex items-center justify-center">
           {theme === "light" ? (
-            <BsMoonStarsFill className="w-16 text-night-300" />
+            <BsMoonStarsFill className="w-16 h-6 text-night-300" />
           ) : (
-            <BsFillSunFill className="w-16 text-day-200" />
+            <BsFillSunFill className="w-16 h-6 text-day-200" />
           )}
           <p>Toggle Theme</p>
         </div>
