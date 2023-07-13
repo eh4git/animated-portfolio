@@ -3,10 +3,9 @@ import ProjectCard from "../components/ProjectCard";
 import ProjectNavbar from "../components/ProjectNavbar";
 import { projects as projectsData } from "../data";
 import { Category } from "../type";
-// import { motion } from "framer-motion";
 import { fadeInUp, routeFadeIn, stagger } from "../animations";
 import { motion, useAnimation, useInView } from "framer-motion";
-import MotionWrapper from "../components/InViewWrapper";
+
 const Projects = () => {
   const [projects, setProjects] = useState(projectsData);
   const [active, setActive] = useState("all");
@@ -22,7 +21,7 @@ const Projects = () => {
     } else {
       controls.start("initial");
     }
-  }, [controls, inView]);
+  }, [controls, inView, projects]);
 
   const handleFilteredCategories = (category: Category) => {
     console.log(category === active, category, active);

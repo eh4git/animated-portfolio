@@ -9,12 +9,16 @@ type WrapperProps = {
     animate?: any;
   };
   className?: string;
+  layout?: boolean;
+  layoutId?: string;
 };
 
 const InViewWrapper: FunctionComponent<WrapperProps> = ({
   children,
   variants,
   className,
+  layout,
+  layoutId,
 }) => {
   const controls = useAnimation();
   const ref = useRef(null);
@@ -37,6 +41,8 @@ const InViewWrapper: FunctionComponent<WrapperProps> = ({
       initial="initial"
       animate={controls}
       className={className}
+      {...(layout && { layout })}
+      {...(layout && { layoutId })}
     >
       {children}
     </motion.div>
